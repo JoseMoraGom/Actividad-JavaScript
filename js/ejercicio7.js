@@ -10,6 +10,15 @@ function fibonacci(n)
     
     
     // ESCRIBE TU CÓDIGO AQUÍ
+    for(e=0;e<n;e++){
+        if(e==0)
+            vector[0]=1;
+        else if(e==1)
+            vector[1]=1;
+            else{
+                vector[e]=vector[e-1]+vector[e-2];
+            }
+    }
     
     
     return vector; // Retorno de la función
@@ -22,7 +31,9 @@ function fibonacci(n)
 function appMain()
 {
     const salidaHTML=document.getElementById("salida");
+
     let x=parseInt(prompt("Indique el número de elementos de la serie de Fibonacci: "));
+
     let v=fibonacci(x);
 
     console.log(`Fibonacci(${x}) = [ ${v} ]`);

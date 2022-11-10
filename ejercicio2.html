@@ -1,4 +1,3 @@
-<!-- Escribe tu nombre aquí-->
 <html lang="es">
     <head>
         <title>Ejercicio 2. Comprobar edad</title>
@@ -9,18 +8,19 @@
         <script>
             
             // Solicita edad por teclado
-            // var edad=prompt('¿Cuantos años tienes? '); <-- DESCOMENTA
+            do
+                var edad=window.prompt("¿Qué edad tienes?");
+            while(isNaN(edad) || edad.trim()=="");
 
-            // Comprobamos que el valor introducido es un numero
-            
-            // Complete el codigo Javascript
-
-            /* si edad < 18 entonces
-                    Alerta >> Usted no tiene edad para conducir
-                sino
-                    Alerta >> Usted ya es mayor de edad; por tanto, ya podría conducir
-                fsi 
-            */
+            if(isNaN(edad))
+                window.alert("El valor introducido no es un número");
+            else{
+                // Comprobamos si la edad es la de un menor de edad.        
+                if(edad>=18)
+                    window.alert("Si tienes edad para conducir");
+                else
+                    window.alert("No tienes edad para conducir");
+            }
         </script>
     </body>
 </html>
