@@ -5,7 +5,25 @@
     <body>
         <h1>Ejercicio 9. Bucle do-while: Tabla de multiplicar</h1>
         <script>
-            
+            document.write("<table>");
+            var e=0;
+            do{
+                document.write("<td>Tabla "+e+"</br>");
+                document.write("0  X "+e+" = "+e*0+"</br>");
+                document.write("1  X "+e+" = "+e*1+"</br>");
+                document.write("2  X "+e+" = "+e*2+"</br>");
+                document.write("3  X "+e+" = "+e*3+"</br>");
+                document.write("4  X "+e+" = "+e*4+"</br>");
+                document.write("5  X "+e+" = "+e*5+"</br>");
+                document.write("6  X "+e+" = "+e*6+"</br>");
+                document.write("7  X "+e+" = "+e*7+"</br>");
+                document.write("8  X "+e+" = "+e*8+"</br>");
+                document.write("9  X "+e+" = "+e*9+"</br>");
+                document.write("10 X "+e+" = "+e*10+"</br></td>");
+                document.write("<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>");
+                e++;
+           }while(e<11);
+           document.write("</table>Ejercicio 9");
         </script>
     </body>
 </html>

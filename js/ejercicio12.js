@@ -12,10 +12,11 @@ function menu1()
 {
     // Implemente la opción de la calculadora que permite sumar.
     console.info("Suma:");
-    let sumando1=parseInt(prompt("Introduzca el prmier sumando: ",0));
+    let sumando1=parseInt(prompt("Introduzca el primer sumando: ",0));
     let sumando2=parseInt(prompt("Introduzca el segundo sumando: ",0));
     let resultado=sumando1+sumando2;
     console.log("El resultado de la suma "+sumando1+" + "+sumando2+" es "+resultado);
+    alert("El resultado de la SUMA es "+resultado);
     return resultado;
 }
 
@@ -30,11 +31,12 @@ function menu2()
     console.info("Resta:");
     
     // IMPLEMENTA TU CÓDIGO AQUÍ
-    let minuendo=0;
-    let sustraendo=0;
-    let resultado=-1;
+    let minuendo=parseInt(prompt("Introduzca el primer minuendo: ",0));;
+    let sustraendo=parseInt(prompt("Introduzca el segundo sustraendo: ",0));;
+    let resultado=minuendo-sustraendo;
 
     console.log("El resultado de la resta "+minuendo+" - "+sustraendo+" es "+resultado);
+    alert("El resultado de la RESTA "+minuendo+" - "+sustraendo+" es "+resultado);
     return resultado;
 }
 /**
@@ -48,8 +50,15 @@ function menu3()
     console.info("Multiplica:");
     
     // IMPLEMENTA TU CODIGO AQUÍ 
+    let mult1=parseInt(prompt("Introduzca el primer número: ",0));;
+    let mult2=parseInt(prompt("Introduzca el segundo número: ",0));;
+    let resultado=mult1*mult2;
 
-    return 3;
+    console.log("El resultado de la MULTIPLICACION "+mult1+" X "+mult2+" es "+resultado);
+    alert("El resultado de la MULTIPLICACION "+mult1+" - "+mult2+" es "+resultado);
+    return resultado;
+
+    //return 3;
 }
 
 /**
@@ -63,8 +72,15 @@ function menu4()
     console.info("Divide:");
     
     // IMPLEMENTA TU CÓDIGO AQUÍ
+    let div1=parseInt(prompt("Introduzca el primer número a DIVIDIR: ",0));;
+    let div2=parseInt(prompt("Introduzca el segundo número a DIVIDIR: ",0));;
+    let resultado=div1/div2;
 
-    return 4;
+    console.log("El resultado de la DIVISION "+div1+" / "+div2+" es "+resultado);
+    alert("El resultado de la DIVISION "+div1+" - "+div2+" es "+resultado);
+    return resultado;
+
+    //return 4;
 
 }
 

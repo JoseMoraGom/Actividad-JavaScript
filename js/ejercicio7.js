@@ -19,10 +19,17 @@ function fibonacci(n)
                 vector[e]=vector[e-1]+vector[e-2];
             }
     }
-    
-    
+
+    /** OTRA FORMA OPTIMIZANDO CODIGO
+    for(e=0;e<n;e++){
+        if(e==0 || e==1)
+            vector[e]=1;
+        else
+            vector[e]=vector[e-1]+vector[e-2];
+    }
     return vector; // Retorno de la función
 }
+*/
 
 /**
  * Aplicación principal Ejercicio 7
