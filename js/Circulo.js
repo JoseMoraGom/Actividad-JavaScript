@@ -20,7 +20,8 @@ class Circulo extends Figura{
      */
     calcularArea()
     {       
-        return (-3); // <-- COMPLETA Y CORRIGE EL CÓDIGO
+
+        return (this.radio/2)*Math.PI; // <-- COMPLETA Y CORRIGE EL CÓDIGO
     }
     /**
      * Calcula el perímetro de la circunferencia,
