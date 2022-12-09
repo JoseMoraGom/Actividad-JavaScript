@@ -5,9 +5,9 @@
 function tirarDado()
 {
     do{
-        var suerte=Math.random()*6;
+        var suerte=Math.random()*10;
         var dado=Number.parseInt(suerte)+1;
-    }while(dado<=0 || dado>6)
+    }while(dado<=0 || dado>10)
     return dado;    
 }
 /**

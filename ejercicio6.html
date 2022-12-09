@@ -14,14 +14,27 @@
             var intentos=Number.parseInt(prompt('Introduce el número de intentos: '));
             var numinten=1;
             var secreto=tirarDado();
-            console.log(intentos);
+
+            console.log("Intentos: "+intentos);
+            console.log("Número secreto: "+secreto);
 
             do{
                 intentos--;
-                document.getElementById("intentos").innerHTML=intentos;
+                /*document.getElementById("intentos").innerHTML=intentos;*/
                 
-                var numm=Number.parseInt(prompt('Intento número'+numinten+': '));
+                var numm=Number.parseInt(prompt('Intento número '+numinten+': '));
+                document.getElementById("intentos").innerHTML=numinten;
+
+                if(numm==secreto){
+                    alert("GANADOR");
+                    break;
+                }else if(intentos!=0)
+                    alert("Sigue intentándolo");
+                else
+                alert("PERDISTE, reinicia para volver a JUGAR");
+
                 numinten++;
+                    
                 //console.log(obtenerNumeroSecreto(0,10));
 
             }while(intentos>0)
